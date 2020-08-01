@@ -7,7 +7,7 @@ namespace Producer
     {
         static void Main(string[] args)
         {
-            var addr = new Address("amqp://localhost:5672");
+            var addr = new Address("amqp://admin:admin@localhost:5672");
 
             var con = new Connection(addr);
             var session = new Session(con);
